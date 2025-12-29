@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     // Llamada simple al endpoint definido en tu backend
-    fetch('http://localhost:3000/api/message')
+    fetch('/api/message')
       .then((response) => response.json())
       .then((data) => {
         setMessage(data.message)
